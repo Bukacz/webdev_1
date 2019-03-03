@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+
+body {
+    background: url(/img/background.png) no-repeat left top;
+    background-size: cover;
+    font-family: 'Titillium Web', sans-serif;
+    color: hsl(0, 100%, 100%);
+}
+
+.header {
+    padding: 40px 0 30px;
+    text-align: center;
+}
+
+.logo {
+    opacity: 0.3;
+}
+
+.main {
+    width: 1080px;
+    margin: 0 auto;
+}
+
+
+
+
+
+
+
+::placeholder,
+h2 {
+    text-transform: capitalize;
+}
+
+.hidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
