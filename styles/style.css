@@ -13,52 +13,69 @@ html {
     box-sizing: inherit;
 }
 
+:focus {
+    outline: none;
+}
 
 body {
-    background: url(/img/background.png) no-repeat left top;
+    background: url(/img/background.png) no-repeat center;
     background-size: cover;
     font-family: 'Titillium Web', sans-serif;
     color: hsl(0, 100%, 100%);
 }
 
-.header {
+/* GENERAL LAYOUT */
+
+.header,
+.footer {
     padding: 0 1rem;
     text-align: center;
 }
 
 .logo {
+    width: 80%;
     opacity: 0.3;
+    margin: 2rem auto;
 }
 
 .logo-top {
-    width: 100%;
     max-width: 429px;
-    margin: 2rem 0;
 }
 
 .logo-bottom {
-    width: 100%;
     max-width: 353px;
 }
 
 .main {
     max-width: 1050px;
+
 }
 
 .form {
-    width: 80%;
+    width: 95%;
     margin: 0 auto 2rem auto;
 }
 
 h2 {
-    font-size: 3.2rem;
+    font-size: 2.5rem;
     margin-bottom: 1rem;
     text-align: center;
-    text-shadow: 0.2rem 0.2rem hsl(0, 0%, 0%);
+    text-shadow: 0.2rem 0.2rem hsl(0, 10%, 10%);
 }
 
-.form::placeholder,
-h2 {
+fieldset {
+    background-clip: padding-box;
+    background-color: hsl(0, 0%, 96%);
+    border: none;
+    border-radius: .5rem;
+    padding: 3rem 2rem;
+    color: hsl(0, 0%, 60%);
+    font-size: 1.8rem;
+}
+
+::placeholder,
+h2,
+select {
     text-transform: capitalize;
 }
 
@@ -72,3 +89,52 @@ h2 {
     position: absolute;
     width: 1px;
 }
+
+/* Fields and inputs */
+.input_wrapper {
+    display: flex;
+    border: 1px solid hsl(0, 0%, 60%);
+    border-radius: .3rem;
+    margin-bottom: 2rem;
+    padding: 0.4rem;
+    padding-left: 0;
+    transition: all 200ms;
+}
+
+.input_wrapper:focus-within {
+    box-shadow: 0 0 1rem hsl(98, 50%, 50%) inset;
+}
+
+.icon_wrapper {
+    display: inline-block;
+    padding: 0 1.5rem;
+    border-right: 1px solid hsl(0, 0%, 80%);
+    text-align: center;
+    width: 8%;
+}
+
+.input_wrapper input,
+select {
+    background: inherit;
+    border: none;
+    padding-left: 1.5rem;
+    font-size: 1.2rem;
+    color: inherit;
+    width: 100%;
+}
+
+textarea {
+    width: 100%;
+    background: inherit;
+    border: none;
+    padding: .5rem 1.5rem;
+    resize: none;
+}
+
+
+.checkbox_wrapper {
+    font-size: 1.2rem;
+    color: hsl(0, 0%, 60%);
+}
+
+.checkbox_wrapper input {}
