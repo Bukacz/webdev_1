@@ -13,208 +13,201 @@
 </head>
 
 <body>
-    <div class="wrapper">
 
+    <header class="header">
+        <img src="/img/logo_top.png" alt="Masteralb logo" class="logo logo-top">
+    </header>
 
-        <header class="header">
-            <img src="/img/logo_top.png" alt="Masteralb logo" class="logo logo-top">
-        </header>
+    <main class="main">
 
-        <main class="main">
+        <!-- Register form -->
+        <form class="form">
+            <h2 class="form_title">register form</h2>
+            <fieldset>
+                <legend class="hidden">Register form</legend>
 
-            <!-- Register form -->
-            <form class="form">
-                <h2 class="form_title">register form</h2>
-                <fieldset>
-                    <legend class="hidden">Register form</legend>
-
-                    <div class="input_wrapper">
-                        <label for="username" class="hidden">Username</label>
-                        <div class="icon_wrapper">
-                            <i class="fas fa-user"></i>
-                        </div>
-                        <input type="text" name="username" placeholder="username">
+                <div class="input_wrapper">
+                    <label for="username" class="hidden">Username</label>
+                    <div class="icon_wrapper">
+                        <i class="fas fa-user"></i>
                     </div>
+                    <input type="text" name="username" placeholder="username">
+                </div>
 
-                    <div class="input_wrapper">
-                        <label for="password" class="hidden">Password</label>
-                        <div class="icon_wrapper">
-                            <i class="fas fa-lock"></i>
-                        </div>
-                        <input type="password" name="password" placeholder="password">
+                <div class="input_wrapper">
+                    <label for="password" class="hidden">Password</label>
+                    <div class="icon_wrapper">
+                        <i class="fas fa-lock"></i>
                     </div>
+                    <input type="password" name="password" placeholder="password">
+                </div>
 
-                    <div class="input_wrapper">
-                        <label for="confirm_password" class="hidden">Confrim Password</label>
-                        <div class="icon_wrapper">
-                            <i class="fas fa-lock"></i>
-                        </div>
-                        <input type="password" name="confirm_password" placeholder="confirm password">
+                <div class="input_wrapper">
+                    <label for="confirm_password" class="hidden">Confrim Password</label>
+                    <div class="icon_wrapper">
+                        <i class="fas fa-lock"></i>
                     </div>
+                    <input type="password" name="confirm_password" placeholder="confirm password">
+                </div>
 
-                    <div class="input_wrapper">
-                        <label for="email" class="hidden">Email</label>
-                        <div class="icon_wrapper">
-                            <i class="fas fa-envelope"></i>
-                        </div>
-                        <input type="email" name="email" placeholder="email">
+                <div class="input_wrapper">
+                    <label for="email" class="hidden">Email</label>
+                    <div class="icon_wrapper">
+                        <i class="fas fa-envelope"></i>
                     </div>
+                    <input type="email" name="email" placeholder="email">
+                </div>
 
-                    <div class="input_wrapper">
-                        <label for="location" class="hidden">Your location</label>
-                        <div class="icon_wrapper">
-                            <i class="fas fa-map-marker-alt"></i>
-                        </div>
-                        <select name="location">
-                            <option value="" disabled selected>Your Location</option>
-                            <option value="warsaw">warsaw</option>
-                            <option value="berlin">berlin</option>
-                            <option value="prague">prague</option>
-                            <option value="new-york">new york</option>
-                            <option value="london">london</option>
-                        </select>
+                <div class="input_wrapper">
+                    <label for="location" class="hidden">Your location</label>
+                    <div class="icon_wrapper">
+                        <i class="fas fa-map-marker-alt"></i>
                     </div>
+                    <select name="location">
+                        <option value="" disabled selected>Your Location</option>
+                        <option value="warsaw">warsaw</option>
+                        <option value="berlin">berlin</option>
+                        <option value="prague">prague</option>
+                        <option value="new-york">new york</option>
+                        <option value="london">london</option>
+                    </select>
+                </div>
 
-                    <div class="input_wrapper">
-                        <input type="checkbox" name="user_terms">
-                        <label for="user_terms">I have read and accept the terms of use</label>
+                <div class="input_wrapper">
+                    <input type="checkbox" name="user_terms">
+                    <label for="user_terms">I have read and accept the terms of use</label>
+                </div>
+
+                <button class="btn btn-green">Sign up</button>
+
+            </fieldset>
+        </form>
+
+        <!-- Send Email -->
+        <form class="form">
+            <h2 class="form_title">send email</h2>
+            <fieldset>
+                <legend class="hidden">Send Email</legend>
+
+                <div class="input_wrapper">
+                    <label for="username" class="hidden">Your name</label>
+                    <div class="icon_wrapper">
+                        <i class="fas fa-user"></i>
                     </div>
+                    <input type="text" name="username" placeholder="your name">
+                </div>
 
-                    <button class="btn btn-green">Sign up</button>
 
-                </fieldset>
-            </form>
-
-            <!-- Send Email -->
-            <form class="form">
-                <h2 class="form_title">send email</h2>
-                <fieldset>
-                    <legend class="hidden">Send Email</legend>
-
-                    <div class="input_wrapper">
-                        <label for="username" class="hidden">Your name</label>
-                        <div class="icon_wrapper">
-                            <i class="fas fa-user"></i>
-                        </div>
-                        <input type="text" name="username" placeholder="your name">
+                <div class="input_wrapper">
+                    <label for="email" class="hidden">Email</label>
+                    <div class="icon_wrapper">
+                        <i class="fas fa-envelope"></i>
                     </div>
+                    <input type="email" name="email" placeholder="email">
+                </div>
 
+                <div class="input_wrapper">
+                    <label for="textarea" class="hidden">Textarea</label>
+                    <textarea name="textarea" cols="30" rows="10" placeholder="type your message..."></textarea>
+                </div>
 
-                    <div class="input_wrapper">
-                        <label for="email" class="hidden">Email</label>
-                        <div class="icon_wrapper">
-                            <i class="fas fa-envelope"></i>
-                        </div>
-                        <input type="email" name="email" placeholder="email">
+                <div class="input_wrapper">
+                    <input type="checkbox" name="send_copy">
+                    <label for="send_copy">Send a copy to Email</label>
+                </div>
+
+                <button class="btn btn-green">Send Email</button>
+
+            </fieldset>
+        </form>
+
+        <!-- Sign in Form -->
+        <form class="form">
+            <h2 class="form_title">sign in form</h2>
+            <fieldset>
+                <legend class="hidden">Sign in Form</legend>
+
+                <div class="input_wrapper">
+                    <label for="username" class="hidden">Username</label>
+                    <div class="icon_wrapper">
+                        <i class="fas fa-user"></i>
                     </div>
+                    <input type="text" name="username" placeholder="username">
+                </div>
 
-                    <div class="input_wrapper">
-                        <label for="textarea" class="hidden">Textarea</label>
-                        <textarea name="textarea" cols="30" rows="10" placeholder="type your message..."></textarea>
+                <div class="input_wrapper">
+                    <label for="password" class="hidden">Password</label>
+                    <div class="icon_wrapper">
+                        <i class="fas fa-lock"></i>
                     </div>
+                    <input type="password" name="password" placeholder="password">
+                </div>
 
-                    <div class="input_wrapper">
-                        <input type="checkbox" name="send_copy">
-                        <label for="send_copy">Send a copy to Email</label>
+                <div class="input_wrapper">
+                    <input type="checkbox" name="remember_me">
+                    <label for="remember_me">Remember me</label>
+                </div>
+
+                <button class="btn btn-green">Sign in</button>
+
+            </fieldset>
+        </form>
+
+
+        <!-- Recover Form -->
+        <form class="form">
+            <h2 class="form_title">sign in form</h2>
+            <fieldset>
+                <legend class="hidden">Sign in Form</legend>
+
+                <div class="input_wrapper">
+                    <label for="email" class="hidden">Email</label>
+                    <div class="icon_wrapper">
+                        <i class="fas fa-envelope"></i>
                     </div>
+                    <input type="email" name="email" placeholder="email">
+                </div>
 
-                    <button class="btn btn-green">Send Email</button>
-
-                </fieldset>
-            </form>
-
-            <!-- Sign in Form -->
-            <form class="form">
-                <h2 class="form_title">sign in form</h2>
-                <fieldset>
-                    <legend class="hidden">Sign in Form</legend>
-
-                    <div class="input_wrapper">
-                        <label for="username" class="hidden">Username</label>
-                        <div class="icon_wrapper">
-                            <i class="fas fa-user"></i>
-                        </div>
-                        <input type="text" name="username" placeholder="username">
+                <div class="input_wrapper">
+                    <label for="number" class="hidden">Phone Number</label>
+                    <div class="icon_wrapper">
+                        <i class="fas fa-mobile-alt"></i>
                     </div>
+                    <input type="number" name="password" placeholder="password">
+                </div>
 
-                    <div class="input_wrapper">
-                        <label for="password" class="hidden">Password</label>
-                        <div class="icon_wrapper">
-                            <i class="fas fa-lock"></i>
-                        </div>
-                        <input type="password" name="password" placeholder="password">
+                <button class="btn btn-green">Send</button>
+                <button class="btn btn-green btn-green-disabled" disabled>Done</button>
+
+            </fieldset>
+        </form>
+
+        <!-- Subscribe Form -->
+        <form class="form">
+            <h2 class="form_title">subscribe form</h2>
+            <fieldset>
+                <legend class="hidden">Subscribe Form</legend>
+
+                <div class="input_wrapper">
+                    <label for="email" class="hidden">Email</label>
+                    <div class="icon_wrapper">
+                        <i class="fas fa-envelope"></i>
                     </div>
+                    <input type="email" name="email" placeholder="email">
+                </div>
 
-                    <div class="input_wrapper">
-                        <input type="checkbox" name="remember_me">
-                        <label for="remember_me">Remember me</label>
-                    </div>
+                <button class="btn btn-green">Subscribe</button>
+                <button class="btn btn-red">No, Thanks</button>
 
-                    <button class="btn btn-green">Sign in</button>
+            </fieldset>
+        </form>
+    </main>
 
-                </fieldset>
-            </form>
-
-
-            <!-- Recover Form -->
-            <form class="form">
-                <h2 class="form_title">sign in form</h2>
-                <fieldset>
-                    <legend class="hidden">Sign in Form</legend>
-
-                    <div class="input_wrapper">
-                        <label for="email" class="hidden">Email</label>
-                        <div class="icon_wrapper">
-                            <i class="fas fa-envelope"></i>
-                        </div>
-                        <input type="email" name="email" placeholder="email">
-                    </div>
-
-                    <div class="input_wrapper">
-                        <label for="number" class="hidden">Phone Number</label>
-                        <div class="icon_wrapper">
-                            <i class="fas fa-mobile-alt"></i>
-                        </div>
-                        <input type="number" name="password" placeholder="password">
-                    </div>
-
-                    <button class="btn btn-green">Send</button>
-                    <button class="btn btn-green btn-green-disabled" disabled>Done</button>
-
-                </fieldset>
-            </form>
-
-            <!-- Subscribe Form -->
-            <form class="form">
-                <h2 class="form_title">subscribe form</h2>
-                <fieldset>
-                    <legend class="hidden">Subscribe Form</legend>
-
-                    <div class="input_wrapper">
-                        <label for="email" class="hidden">Email</label>
-                        <div class="icon_wrapper">
-                            <i class="fas fa-envelope"></i>
-                        </div>
-                        <input type="email" name="email" placeholder="email">
-                    </div>
-
-                    <button class="btn btn-green">Subscribe</button>
-                    <button class="btn btn-red">No, Thanks</button>
-
-                </fieldset>
-            </form>
-        </main>
-
-        <footer class="footer">
-            <img src="/img/logo_bottom.png" alt="Masteralb logo" class="logo logo-bottom">
-        </footer>
+    <footer class="footer">
+        <img src="/img/logo_bottom.png" alt="Masteralb logo" class="logo logo-bottom">
+    </footer>
 
     </div>
-    </div>
-
-
-
-
 
     <script src="script/script.js"></script>
 </body>
